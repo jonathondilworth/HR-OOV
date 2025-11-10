@@ -9,7 +9,7 @@ from hierarchy_transformers import HierarchyTransformer
 from OnT.OnT import OntologyTransformer
 from sentence_transformers import SentenceTransformer
 
-from thesis.utils.retrievers import (
+from hroov.utils.retrievers import (
     BaseRetriever
 )
 
@@ -18,12 +18,9 @@ from copy import copy, deepcopy
 """
 GPU accelerated retrievers for SBERT, HiT and OnT
 caches matrix operations associated with hyperbolic dist calculations
-within GPU memory, speeds up retrievers by ~x3:x12 compared to:
- 28 minutes to run HiT RAG-QA vs 75 minutes with non-cached GPU
-    vs multiple hours with CPU
-
-  Only supports HiT/OnT with hyperbolic dist 
-    (see implementation & math_functools for details)
+within GPU memory, speeds up retrievers by ~x3 -> x12
+Only supports HiT/OnT with hyperbolic dist 
+(see implementation & math_functools for details)
 """
 
 class BaseModelRetriever(BaseRetriever):
