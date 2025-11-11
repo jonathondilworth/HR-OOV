@@ -1,0 +1,61 @@
+name: knowledge-retrieval-env
+
+channels:
+  - rapidsai
+  - conda-forge
+  - nvidia
+  - defaults
+
+dependencies:
+  - python=3.12
+  - mamba
+  - pip
+
+  # core
+  - pandas
+  - scipy
+  - seaborn
+  - pytest
+
+  # gpu (rapids should install most required torch & nvidia packages)
+  - pytorch>=2.0
+  - rapids>=25.04
+  - cuda-version>=12.8
+  - torchmetrics
+
+  # deps for DeepOnto
+  - jpype1
+  - yacs
+  - anytree
+  - click
+  - dill
+  - scikit-learn
+  - transformers
+  - datasets
+  - spacy
+  - pprintpp
+  - networkx
+  - lxml
+  - textdistance
+  - ipywidgets
+  - ipykernel
+  - enlighten
+  - rdflib
+  - nltk
+
+  # deps for OnT (include additional deps if any problems are ran into)
+  - xsimd
+
+  # deps for data pre-processing
+  - openpyxl
+
+  # deps installable via pip (handled via requirements.txt)
+  # TODO: streamline the neccesary requirements.txt, repo is dep bloated right now.
+  # - pip:
+    # - torchvision
+    # - sentence-transformers
+    # - git+https://github.com/geoopt/geoopt.git
+    # - deeponto --no-deps
+    # - hierarchy-transformers --no-deps
+    # - dvc[all]
+    # - bm25-rank

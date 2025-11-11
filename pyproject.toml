@@ -1,0 +1,18 @@
+[project]
+name = "HR-OOV"
+version = "0.1"
+requires-python = ">=3.11"
+description = "OOV knowledge HR with SNOMED CT"
+readme = "README.md"
+
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["hroov", "hierarchy_transformers", "OnT"]
+
+[tool.setuptools."package-dir"]
+hroov = "src/hroov"
+hierarchy_transformers = "lib/hierarchy_transformers"
+OnT = "lib/OnT"
