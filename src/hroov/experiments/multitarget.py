@@ -532,7 +532,7 @@ for model_name, model in models_dict_multi_target.items():
 
     # (macro) PR-AUC
     R_grid, P_macro = macro_pr_curve(per_query_rels_for_PR, recall_points=101)
-    macro_pr_auc = float(np.trapz(P_macro, R_grid))
+    macro_pr_auc = float(np.trapezoid(P_macro, R_grid))
 
     # normalise over queries & compute coverage
     N = len(oov_match_all)
