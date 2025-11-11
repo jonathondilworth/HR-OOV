@@ -22,4 +22,16 @@ echo "Downloading pretrained OnT encoders ... "
 
 ./scripts/remote_deployment/download_gdrive_zip.sh "$ONT_URL" "$MODELS_DIR"
 
+echo "Downloading OnT-LG model checkpoint ... "
+
+wget -P "$MODELS_DIR/snomed_models" https://ontozoo.io/models/OnT-LG.zip
+
+echo "Unzipping OnT-LG model checkpoint ... "
+
+unzip "$MODELS_DIR/snomed_models/OnT-LG.zip" -d "$MODELS_DIR/snomed_models"
+
+echo "Removing OnT-LG.zip ... "
+
+rm "$MODELS_DIR/snomed_models/OnT-LG.zip"
+
 echo "...Done! Models unpacked to $MODELS_DIR"
