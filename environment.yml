@@ -7,8 +7,6 @@ channels:
   - defaults
 
 dependencies:
-  # EDIT: we require 3.12 due to overrides 
-  # base, pin to 3.11, as previously >=3.11 kept requiring packages to be built from source
   - python=3.12
   - mamba
   - pip
@@ -25,7 +23,7 @@ dependencies:
   - cuda-version>=12.8
   - torchmetrics
 
-  # deps for DeepOnto (AFAIK for now)
+  # deps for DeepOnto
   - jpype1
   - yacs
   - anytree
@@ -51,13 +49,8 @@ dependencies:
   # deps for data pre-processing
   - openpyxl
 
-  # NOTE:
-  # install pip deps manually (conda/mamba doesn't recognise flags)
-  # maybe move these into their own requirements.txt? TODO: look into best
-  # practices for managing conda+pip (perhaps the use of poetry/uv)
-  # or using a containerised environment might be more appropriate?
-
-  # deps installable via pip
+  # deps installable via pip (handled via requirements.txt)
+  # TODO: streamline the neccesary requirements.txt, repo is dep bloated right now.
   # - pip:
     # - torchvision
     # - sentence-transformers

@@ -250,7 +250,7 @@ models_dict_single_target = {
   # BASELINES
   "BoW TFIDF": tfidf_ret,
   "BoW BM25": bm25_ret,
-  # BASELINE CONTEXTUAL EMBEDDINGS
+  # BASELINE CONTEXTUALISED EMBEDDINGS
   "SBERT cos-sim": sbert_ret_plm_w_cosine_sim,
   # HiT (Full)
   "HiT SNO-25(F)": hit_ret_snomed_25_w_hyp_dist,
