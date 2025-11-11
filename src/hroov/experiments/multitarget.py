@@ -532,7 +532,7 @@ for model_name, model in models_dict_multi_target.items():
 
     # (macro) PR-AUC
     R_grid, P_macro = macro_pr_curve(per_query_rels_for_PR, recall_points=101)
-    macro_pr_auc = float(np.trapz(P_macro, R_grid))
+    macro_pr_auc = float(np.trapezoid(P_macro, R_grid))
 
     # normalise over queries & compute coverage
     N = len(oov_match_all)
@@ -577,13 +577,14 @@ for model_name, model in models_dict_multi_target.items():
       "precision": P_macro.tolist()
     }
 
-output_file = './data/oov_entity_mentions_multi_relevant_targets_weight_w035_50_queries.json'
+Path('./logs').mkdir(parents=True, exist_ok=True)
+output_file = './logs/oov_entity_mentions_multi_relevant_targets_weight_w035_50_queries.json'
 with open(output_file, 'w') as f:
     json.dump(all_results, f, indent=2)
 
 print(f"All results saved to {output_file}")
 
-output_macro_pr_auc_file = './data/oov_entity_mentions_multi_target_WEIGHTED_w035_50_q__PR_AUC_POINTS_4_PLOT.json'
+output_macro_pr_auc_file = './logs/oov_entity_mentions_multi_target_WEIGHTED_w035_50_q__PR_AUC_POINTS_4_PLOT.json'
 with open(output_macro_pr_auc_file, 'w') as f:
     json.dump(macro_avg_PR_AUC_data, f, indent=2)
 

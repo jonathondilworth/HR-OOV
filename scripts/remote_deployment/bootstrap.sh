@@ -163,10 +163,21 @@ conda run -n "$ENV_NAME" --no-capture-output python -m pip install scispacy --no
 
 echo "[Step 9] Install ROBOT for CLI-based reasoning ... "
 
-git clone https://github.com/ontodev/robot.git
-cd robot
-mvn clean package
-cd ..
+# breaks when the script has already been executed prior:
+# git clone https://github.com/ontodev/robot.git
+# cd robot
+# mvn clean package
+# cd ..
+
+if [ -d "./robot" ]; then
+  echo "ROBOT has already been installed at ./robot — skipping ... "
+else
+  echo "Install ROBOT ... "
+  git clone https://github.com/ontodev/robot.git
+  cd robot
+  mvn clean package
+  cd ..
+fi
 
 # -- IMPORTANT: write the $ENV_NAME to the .env file (enables the remaining build scripts to run)
 

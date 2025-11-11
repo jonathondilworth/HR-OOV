@@ -395,7 +395,8 @@ for model_name, model in models_dict_single_target.items():
 
     all_results[model_name] = normalized
 
-output_file = './data/oov_entity_mentions_single_target_ANN_50_queries.json'
+Path('./logs').mkdir(parents=True, exist_ok=True)
+output_file = './logs/oov_entity_mentions_single_target_ANN_50_queries.json'
 with open(output_file, 'w') as f:
     json.dump(all_results, f, indent=2)
 
