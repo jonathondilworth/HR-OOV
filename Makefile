@@ -3,7 +3,7 @@ SHELL := /usr/bin/env bash
 
 IMAGE ?= hroov:gpu
 
-.PHONY: init env models embeddings all
+.PHONY: init env models embeddings single-target multi-target tests all
 
 init:
 	@echo "[INIT] Initialising project enviornment variables and .env"
@@ -21,7 +21,15 @@ embeddings:
 	@echo "[EMBEDDINGS] Generating embeddings ... "
 	./scripts/remote_deployment/produce_embeddings.sh
 
-all: init env models embeddings
+single-target:
+	@echo "[SINGLE-TARGET] Running single target experiments ... "
+	./scripts/remote_deployment/single_target.sh
+
+multi-target:
+	@echo "[MULTI-TARGET] Running multiple target experiments ... "
+	./scripts/remote_deployment/multitarget.sh
+
+all: init env models embeddings single-target multi-target
 	@echo "[ALL] Finished running entire pipeline!"
 
 default: all

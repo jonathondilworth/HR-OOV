@@ -86,7 +86,7 @@ ont_galen_23_pred_embeddings = ont_galen_23_pred_encoder.encode_concept(
 ).astype("float32")
 np.save(f"{embeddings_dir}/ont-galen-23-pred-embeddings.npy", ont_galen_23_pred_embeddings)
 
-# ANATOMY
+# OnT ANATOMY
 
 ont_anatomy_23_pred_model_fp = "./models/models/prediction/OnTr-all-MiniLM-L12-v2-ANATOMY"
 ont_anatomy_23_pred_encoder = OntologyTransformer.load(ont_anatomy_23_pred_model_fp)
@@ -97,7 +97,7 @@ ont_anatomy_23_pred_embeddings = ont_anatomy_23_pred_encoder.encode_concept(
 ).astype("float32")
 np.save(f"{embeddings_dir}/ont-anatomy-23-pred-embeddings.npy", ont_anatomy_23_pred_embeddings)
 
-# Gene Ontology (GO)
+# OnT Gene Ontology (GO)
 
 ont_gene_ontology_23_pred_model_fp = "./models/models/prediction/OnTr-all-MiniLM-L12-v2-GO"
 ont_gene_ontology_23_pred_encoder = OntologyTransformer.load(ont_gene_ontology_23_pred_model_fp)
@@ -108,16 +108,29 @@ ont_gene_ontology_23_pred_embeddings = ont_gene_ontology_23_pred_encoder.encode_
 ).astype("float32")
 np.save(f"{embeddings_dir}/ont-go-23-pred-embeddings.npy", ont_gene_ontology_23_pred_embeddings)
 
-# SNOMED CT 2025 (Full)
+# OnT SNOMED CT 2025 (M-32)
 
-ontr_snomed_25_uni_model_fp = './models/snomed_models/OnTr-snomed25-uni'
-ontr_snomed_25_uni_encoder = OntologyTransformer.load(ontr_snomed_25_uni_model_fp)
-ont_snomed_25_embeddings = ontr_snomed_25_uni_encoder.encode_concept(
+ontr_snomed_minified_32_model_fp = './models/snomed_models/OnTr-m-32'
+ontr_snomed_m_32_encoder = OntologyTransformer.load(ontr_snomed_minified_32_model_fp)
+ont_snomed_minified_32_embeddings = ontr_snomed_m_32_encoder.encode_concept(
     entity_verbalisation_list,
     batch_size=128,
     show_progress_bar=True
 ).astype("float32")
-np.save(f"{embeddings_dir}/ont-snomed-25-embeddings.npy", ont_snomed_25_embeddings)
+np.save(f"{embeddings_dir}/ont-snomed-minified-32-embeddings.npy", ont_snomed_minified_32_embeddings)
+
+print("Initial embeddings saved... Embedding with new models...")
+
+# SNOMED CT 2025 (Full)
+
+# ontr_snomed_25_uni_model_fp = './models/snomed_models/OnTr-snomed25-uni'
+# ontr_snomed_25_uni_encoder = OntologyTransformer.load(ontr_snomed_25_uni_model_fp)
+# ont_snomed_25_embeddings = ontr_snomed_25_uni_encoder.encode_concept(
+#     entity_verbalisation_list,
+#     batch_size=128,
+#     show_progress_bar=True
+# ).astype("float32")
+# np.save(f"{embeddings_dir}/ont-snomed-25-embeddings.npy", ont_snomed_25_embeddings)
 
 # SNOMED CT 2025 (M-64)
 
@@ -130,7 +143,7 @@ ont_snomed_minified_embeddings = ontr_snomed_encoder.encode_concept(
 ).astype("float32")
 np.save(f"{embeddings_dir}/ont-snomed-minified-embeddings.npy", ont_snomed_minified_embeddings)
 
-# SNOMED CT 2025 (M-128)
+# OnT SNOMED CT 2025 (M-128)
 
 ontr_snomed_minified_128_model_fp = './models/snomed_models/OnTr-m-128'
 ontr_snomed_m_128_encoder = OntologyTransformer.load(ontr_snomed_minified_128_model_fp)
@@ -141,15 +154,37 @@ ont_snomed_minified_128_embeddings = ontr_snomed_m_128_encoder.encode_concept(
 ).astype("float32")
 np.save(f"{embeddings_dir}/ont-snomed-minified-128-embeddings.npy", ont_snomed_minified_128_embeddings)
 
-# SNOMED CT 2025 (M-32)
+# HIT SNOMED NEW
 
-ontr_snomed_minified_32_model_fp = './models/snomed_models/OnTr-m-32'
-ontr_snomed_m_32_encoder = OntologyTransformer.load(ontr_snomed_minified_32_model_fp)
-ont_snomed_minified_32_embeddings = ontr_snomed_m_32_encoder.encode_concept(
+# hit_snomed_new_model_fp = './models/snomed_models/HiT-all-MiniLM-L12-v2-FULL-EXT-25'
+# hit_snomed_new_encoder = HierarchyTransformer.from_pretrained(hit_snomed_new_model_fp)
+# hit_snomed_new_embeddings = hit_snomed_new_encoder.encode(
+#     entity_verbalisation_list,
+#     batch_size=128,
+#     show_progress_bar=True
+# ).astype("float32")
+# np.save(f"{embeddings_dir}/hit-snomed-new-embeddings.npy", hit_snomed_new_embeddings)
+
+# ONT SNOMED NEW
+
+# ont_snomed_new_model_fp = './models/snomed_models/OnT-all-MiniLM-L12-v2-FULL-EXT-25'
+# ont_snomed_new_encoder = OntologyTransformer.load(ont_snomed_new_model_fp)
+# ont_snomed_new_embeddings = ont_snomed_new_encoder.encode_concept(
+#     entity_verbalisation_list,
+#     batch_size=128,
+#     show_progress_bar=True
+# ).astype("float32")
+# np.save(f"{embeddings_dir}/ont-snomed-new-embeddings.npy", ont_snomed_new_embeddings)
+
+# ONT SNOMED LG
+
+ont_snomed_LG_model_fp = './models/snomed_models/OnT-LG'
+ont_snomed_LG_encoder = OntologyTransformer.load(ont_snomed_LG_model_fp)
+ont_snomed_LG_embeddings = ont_snomed_LG_encoder.encode_concept(
     entity_verbalisation_list,
     batch_size=128,
     show_progress_bar=True
 ).astype("float32")
-np.save(f"{embeddings_dir}/ont-snomed-minified-32-embeddings.npy", ont_snomed_minified_32_embeddings)
+np.save(f"{embeddings_dir}/ont-snomed-LG-embeddings.npy", ont_snomed_LG_embeddings)
 
 print("Embeddings saved.")
