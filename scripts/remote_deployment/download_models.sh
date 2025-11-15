@@ -14,24 +14,44 @@ ONT_URL="${ONT_PRETRAINED_MODEL_URL:-https://drive.google.com/uc?id=1t9xWcLHoEE5
 
 mkdir -p "$MODELS_DIR"
 
+# MODEL CHECKPOINTS: PRE-TRAINED SNOMED ENCODERS
+
 echo "Downloading SNOMED-tuned encoders ... "
 
 ./scripts/remote_deployment/download_gdrive_zip.sh "$SNOMED_URL" "$MODELS_DIR"
+
+# MODEL CHECKPOINTS: PRE-TRAINED OnT ENCODERS
 
 echo "Downloading pretrained OnT encoders ... "
 
 ./scripts/remote_deployment/download_gdrive_zip.sh "$ONT_URL" "$MODELS_DIR"
 
-echo "Downloading OnT-LG model checkpoint ... "
+# MODEL CHECKPOINT: HiT Mixed Hard Negatives
 
-wget -P "$MODELS_DIR/snomed_models" https://ontozoo.io/models/OnT-LG.zip
+echo "Downloading HiT-mixed-hard-negatives model checkpoint ... "
 
-echo "Unzipping OnT-LG model checkpoint ... "
+wget -P "$MODELS_DIR/snomed_models" https://ontozoo.io/models/HiT_mixed_hard.zip
 
-unzip "$MODELS_DIR/snomed_models/OnT-LG.zip" -d "$MODELS_DIR/snomed_models"
+echo "Unzipping HiT-mixed-hard model checkpoint ... "
 
-echo "Removing OnT-LG.zip ... "
+unzip "$MODELS_DIR/snomed_models/HiT_mixed_hard.zip" -d "$MODELS_DIR/snomed_models"
 
-rm "$MODELS_DIR/snomed_models/OnT-LG.zip"
+echo "Removing HiT_mixed_hard.zip ... "
+
+rm "$MODELS_DIR/snomed_models/HiT_mixed_hard.zip"
+
+# MODEL CHECKPOINT: OnT-96
+
+echo "Downloading OnT-96 model checkpoint ... "
+
+wget -P "$MODELS_DIR/snomed_models" https://ontozoo.io/models/OnT-96-ckpt.zip
+
+echo "Unzipping OnT-96 model checkpoint ... "
+
+unzip "$MODELS_DIR/snomed_models/OnT-96-ckpt.zip" -d "$MODELS_DIR/snomed_models"
+
+echo "Removing OnT-96-ckpt.zip ... "
+
+rm "$MODELS_DIR/snomed_models/OnT-96-ckpt.zip"
 
 echo "...Done! Models unpacked to $MODELS_DIR"
