@@ -33,12 +33,24 @@ def download(url: str, fname: str, chunk_size=1024):
 load_dotenv()
 NHS_KEY = os.getenv('NHS_API_KEY')
 
+# TODO: implement selection mechanism via CLI.
+
 # call NHS API to get latest SNOMED release file name + file url
 response = requests.get(f"https://isd.digital.nhs.uk/trud/api/v1/keys/{NHS_KEY}/items/4/releases?latest")
 JSON_RESPONSE = response.json()
 
-file_url = JSON_RESPONSE['releases'][0]['archiveFileUrl']
-file_name = JSON_RESPONSE['releases'][0]['id']
+# OCT RELEASE
+# file_url = f"https://isd.digital.nhs.uk/download/api/v1/keys/{NHS_KEY}/content/items/4/SnomedCT_InternationalRF2_PRODUCTION_20251001T120000Z.zip"
+# file_name = 'SnomedCT_InternationalRF2_PRODUCTION_20251001T120000Z.zip'
+
+# SEPT RELEASE
+file_url = f"https://isd.digital.nhs.uk/download/api/v1/keys/{NHS_KEY}/content/items/4/SnomedCT_InternationalRF2_PRODUCTION_20250901T120000Z.zip"
+file_name = 'SnomedCT_InternationalRF2_PRODUCTION_20250901T120000Z.zip'
+
+# LATEST
+# file_url = JSON_RESPONSE['releases'][0]['archiveFileUrl']
+# file_name = JSON_RESPONSE['releases'][0]['id']
+
 version = get_snomed_version_number(file_name)
 
 print("SNOMED CT File URL: ", file_url)
