@@ -159,6 +159,12 @@ global_cutoff_depth = 3
 
 # set up the 'models dict' ready for experimental runs (single target):
 
+# Models for future work:
+#
+# "HiT SNO-25(F-H) d_k": hit_snomed_hard_w_hyp_dist,
+# "HiT SNO-25(F-H) s_e": hit_snomed_hard_w_ent_sub,
+#
+
 models_dict = {
   # BASELINES
   "BoW Lex-BASE TFIDF": tfidf_ret,
@@ -168,8 +174,6 @@ models_dict = {
   # HiT (Full)
   "HiT SNO-25(F-R) d_k": hit_ret_snomed_25_w_hyp_dist,
   "HiT SNO-25(F-R) s_e": hit_ret_snomed_25_w_ent_sub,
-  "HiT SNO-25(F-H) d_k": hit_snomed_hard_w_hyp_dist,
-  "HiT SNO-25(F-H) s_e": hit_snomed_hard_w_ent_sub,
   # OnT SNOMED Models (Full, batch_size=64, Mini, batch_size=[32,64,128])
   "OnT SNO-25(F) d_k": ont_snomed_96_w_hyp_dist,
   "OnT SNO-25(F) s_c": ont_snomed_96_w_con_sub,
