@@ -1,0 +1,952 @@
+[
+  {
+    "internal_id": "mc-0000",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "staphylococci",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0001",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "writhing",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0002",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "prednisone/prednisolone",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0003",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "ca72-4",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0004",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "mesial arm",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0005",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "anterior tibial soft tissue",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0006",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "plasma membrane",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0007",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "gastroenteropancreatic neuroendocrine tumor",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0008",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "malignant pustule",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0009",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "p02-115",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0010",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "serum k+ 3.8",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0011",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "spinal cord",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0012",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "periorbital tissue",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0013",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "prostate gland",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0014",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "vesicles",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0015",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "calcified tissues",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0016",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "sclera",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0017",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "acinar glands",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0018",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "spiral",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0019",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "small-cell lung cancer",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0020",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "left anteromedial",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0021",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "somatostatin receptor",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0022",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "hydatid cyst",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0023",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "labial surface",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0024",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "ligaments",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0025",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "temporo-mandibular ligament",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0026",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "transilluminate",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0027",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "crustaceans",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0028",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "vertical lines",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0029",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "bone cancer",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0030",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "platelet count 170,000/mm3",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0031",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "glandular cell",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0032",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "casts 5 hyaline",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0033",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "mast cells",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0034",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "glycopyrrolate",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0035",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "tetrazolium chloride",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0036",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "lateral nasal",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0037",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "bruits",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0038",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "thighs",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0039",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "buccinator",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0040",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "peripheral vascular",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0041",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "hiv rna viral",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0042",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "nasal antrostomy",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0043",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "ligament",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0044",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "alveolar aerial oxygen",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0045",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "nitrite",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0046",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "epidural analgesia",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0047",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "intestinal anastomosis",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0048",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "cytoplasmic ribosomes",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  },
+  {
+    "internal_id": "mc-0049",
+    "source_dataset": "REQUIRES ANNOTATION",
+    "question_id": "REQUIRES ANNOTATION",
+    "question": "REQUIRES ANNOTATION",
+    "entity_mention": {
+      "entity_literal": "left-side lateral",
+      "start_position": 0,
+      "end_position": 0,
+      "entity_type": "REQUIRES_ANNOTATION"
+    },
+    "target_entity": {
+      "iri": "REQUIRES ANNOTATION",
+      "rdfs:label": "REQUIRES ANNOTATION",
+      "skos:prefLabel": "REQUIRES ANNOTATION",
+      "skos:altLabels": [],
+      "depth": 0
+    }
+  }
+]
