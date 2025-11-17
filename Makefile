@@ -21,6 +21,18 @@ process-snomed:
 	@echo "[PROCESS-SNOMED] Processing SNOMED CT..."
 	./scripts/remote_deployment/process_snomed.sh
 
+download-mirage:
+	@echo "[MIRAGE] Downloading MIRAGE ... "
+	./scripts/remote_deployment/download_mirage.sh
+
+process-mirage:
+	@echo "[MIRAGE] Processing MIRAGE ... (Question Extract & NER)"
+	./scripts/remote_deployment/process_mirage.sh
+
+sample:
+	@echo "[SAMPLE] Sampling processed datasets (SNOMED CT and MIRAGE)..."
+	./scripts/remote_deployment/process_diff_and_sample.sh
+
 models:
 	@echo "[MODELS] Fetching both SNOMED-tuned and pretrained encoders ..."
 	./scripts/remote_deployment/download_models.sh
