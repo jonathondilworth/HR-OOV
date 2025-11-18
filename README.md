@@ -5,28 +5,34 @@ SNOMED CT is a biomedical ontology with a hierarchical representation of large-s
 ## Features
 
 * Create new datasets to test agaisnt using `make sample` *(requires manual annotation)*.
+
 * Re-use the [provided retrievers](./src/hroov/utils/retrievers.py) and [gpu_retrievers](./src/hroov/utils/gpu_retrievers.py) for knowledge retrieval. These support:
+		
 		* TF-IDF, BM25
+		
 		* SBERT
+		
 		* HiT and OnT *(with hyperbolic distance and/or entity & concept subsumption)*
+
 * Review experimental results.
+
 	* Published within the [logs](./logs) folder, and can be viewed within the [included notebook](./notebooks/scratch_notebook.ipynb).
 
 ## Usage
 
 See the included [Makefile](./Makefile) and the note under [reproducability](#Reproducibility) on deployment.
 
-To initialise the repo on a remote machine, clone the repository with:
+* To initialise the repo on a remote machine, clone the repository with
 
-`git clone https://github.com/jonathondilworth/HR-OOV.git`,
+	* `git clone https://github.com/jonathondilworth/HR-OOV.git`,
 
-and `cd HR-OOV`. Then run `make init` and `make env`.
+	* and `cd HR-OOV`. Then run `make init` and `make env`.
 
-To process SNOMED CT, run `make download-snomed` and `make process-snomed`.
+* To process SNOMED CT, run `make download-snomed` and `make process-snomed`.
 
-To process MIRAGE, run `make download-mirage` and `make process-mirage`.
+* To process MIRAGE, run `make download-mirage` and `make process-mirage`.
 
-To create new datasets, run `make sample`.
+* To create new datasets, set `SAMPLING_PROCEDURE=random` in `.env` and run `make sample`.
 
 See details under [reproducability](#Reproducibility) for re-creating experimental results.
 
@@ -45,8 +51,11 @@ This procedure will:
 1. Initialises the project using [init.sh](./scripts/remote_deployment/init.sh).
 2. Configures the environment with [env.sh](./scripts/remote_deployment/env.sh).
 3. Downloads and processes the September 2025 release of SNOMED CT.
+		
 		* This will failover to a publicly available version if no `NHS_API_KEY` has been provided.
+		
 		* Failing to provide the `NHS_API_KEY` will result in small variation in the results.
+
 4. Downloads embedding models.
 5. Produces embeddings for experiments.
 6. Runs single and multiple target experiments.
