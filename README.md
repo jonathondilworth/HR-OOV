@@ -8,11 +8,11 @@ SNOMED CT is a biomedical ontology with a hierarchical representation of large-s
 
 * Re-use the [provided retrievers](./src/hroov/utils/retrievers.py) and [gpu_retrievers](./src/hroov/utils/gpu_retrievers.py) for knowledge retrieval. These support:
 		
-		* TF-IDF, BM25
+	* TF-IDF, BM25
 		
-		* SBERT
+	* SBERT
 		
-		* HiT and OnT *(with hyperbolic distance and/or entity & concept subsumption)*
+	* HiT and OnT *(with hyperbolic distance and/or entity & concept subsumption)*
 
 * Review experimental results.
 
@@ -52,9 +52,9 @@ This procedure will:
 2. Configures the environment with [env.sh](./scripts/remote_deployment/env.sh).
 3. Downloads and processes the September 2025 release of SNOMED CT.
 		
-		* This will failover to a publicly available version if no `NHS_API_KEY` has been provided.
+	* This will failover to a publicly available version if no `NHS_API_KEY` has been provided.
 		
-		* Failing to provide the `NHS_API_KEY` will result in small variation in the results.
+	* Failing to provide the `NHS_API_KEY` will result in small variation in the results.
 
 4. Downloads embedding models.
 5. Produces embeddings for experiments.
