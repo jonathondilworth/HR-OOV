@@ -56,16 +56,18 @@ def preprocess(data: dict, to_lower: bool, remove_parens: bool) -> dict:
         labels = entry.get("label")
         if isinstance(labels, list):
             # renames 'rdfs:label' to 'name' (per training script requirements)
-            if remove_parens and to_lower:
+            if labels and remove_parens and to_lower:
                 entry["name"] = strip_parens(
                     entry["label"][0].lower()
                 )
-            elif remove_parens and not to_lower:
+            elif labels and remove_parens and not to_lower:
                 entry["name"] = strip_parens(
                     entry["label"][0]
                 )
-            else:
+            elif labels:
                 entry["name"] = entry["label"][0]
+            else: # entry is an empty list / undefined
+                entry["name"] = ""
             entry.pop("label")
         if isinstance(labels, str):
             # the instance in which label = "owl:Thing"

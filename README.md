@@ -1,6 +1,6 @@
 # HR-OOV
 
-SNOMED CT is a biomedical ontology with a hierarchical representation of large-scale concepts. Knowledge retrieval in SNOMED CT is critial for its application, but often proves challanging due to language ambiguity, synonyms, polysemies and so on. This problem is exacerbated when the queries are out-of-vocabulary (OOV), i.e., having no equivalent matchings in the ontology. In this work, we focus on the problem of hierarchical concept retrieval from SNOMED CT with OOV queries, and propose an approach based on language model-based ontology embeddings. For evaluation, we construct OOV queries annotated against SNOMED CT concepts, testing the retrieval of the most direct subsumers and their less relevant ancestors. We find that our method outperforms the baselines including SBERT and two lexical matching methods. While evaluated against SNOMED CT, the approach is generalisable and can be extended to other ontologies. We release code, tools, and evaluation datasets at [https://github.com/jonathondilworth](HR-OOV).
+SNOMED CT is a biomedical ontology with a hierarchical representation of large-scale concepts. Knowledge retrieval in SNOMED CT is critial for its application, but often proves challanging due to language ambiguity, synonyms, polysemies and so on. This problem is exacerbated when the queries are out-of-vocabulary (OOV), i.e., having no equivalent matchings in the ontology. In this work, we focus on the problem of hierarchical concept retrieval from SNOMED CT with OOV queries, and propose an approach based on language model-based ontology embeddings. For evaluation, we construct OOV queries annotated against SNOMED CT concepts, testing the retrieval of the most direct subsumers and their less relevant ancestors. We find that our method outperforms the baselines including SBERT and two lexical matching methods. While evaluated against SNOMED CT, the approach is generalisable and can be extended to other ontologies. We release code, tools, and evaluation datasets at [https://github.com/jonathondilworth](https://github.com/jonathondilworth/HR-OOV).
 
 ## Features
 
@@ -48,8 +48,8 @@ Then run `make`.
 
 This procedure will:
 
-1. Initialises the project using [init.sh](./scripts/remote_deployment/init.sh).
-2. Configures the environment with [env.sh](./scripts/remote_deployment/env.sh).
+1. Initialise the project using [init.sh](./scripts/remote_deployment/init.sh).
+2. Configure the environment with [env.sh](./scripts/remote_deployment/env.sh).
 3. Downloads and processes the September 2025 release of SNOMED CT.
 		
 	* This will failover to a publicly available version if no `NHS_API_KEY` has been provided.
@@ -85,6 +85,24 @@ As this work is on-going, OntoZoo and Google Drive provide hosting platforms pri
 * OnT-96: [https://ontozoo.io/models/OnT-96-ckpt.zip](https://ontozoo.io/models/OnT-96-ckpt.zip)
 * OnT-Mini-128: [https://drive.google.com/file/d/1cQOqFVOHqBKkSirepzF7ga6mRYPP-LnT/view](https://drive.google.com/file/d/1cQOqFVOHqBKkSirepzF7ga6mRYPP-LnT/view)
 * HiT-mixed-SNOMED-25: [https://drive.google.com/file/d/1cQOqFVOHqBKkSirepzF7ga6mRYPP-LnT/view](https://drive.google.com/file/d/1cQOqFVOHqBKkSirepzF7ga6mRYPP-LnT/view)
+
+### Training Models
+
+To train HiT and OnT models using a local copy of SNOMED CT, ensure `snomedct-international.owl` is within the `data` directory, and run:
+
+* `make hit-data` to prepare the training data for a Hierarchy Transformer.
+
+* `make ont-data` to prepare the training data for an Ontology Transformer.
+
+* `make train-hit` to train a HiT model, according to [the HiT config.yaml](./lib/hierarchy_transformers/scripts/config.yaml).
+
+* `make train-ont` to train an OnT model, according to [the OnT config.yaml](./lib/OnT/config.yaml).
+
+### Training Models with Custom OWL Ontologies
+
+See the [included documentation](./docs) on training [HiT models using custom ontologies](./docs/training_custom_hit_models.md), or review the [Hierarchy Transformers repo](https://github.com/KRR-Oxford/HierarchyTransformers) to re-train models using [existing datasets from HuggingFace](https://huggingface.co/Hierarchy-Transformers).
+
+See the [OnT repo](https://github.com/HuiYang1997/OnT) for training custom OnT models.
 
 ## License
 

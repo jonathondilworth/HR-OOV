@@ -61,18 +61,18 @@ def main(config_file: str):
         pass
 
     # 0. LOAD LEXICON:
-    # TODO: replace with proper pathing
-    json_path = Path('./data/hit_dataset/mixed/local_entity_lexicon.json')
+    json_path = Path(f"{config.dataset_path}/{config.dataset_name}/local_entity_lexicon.json")
     with json_path.open('r', encoding='utf-8') as f:
         data_dict = json.load(f)
     lexicon = data_dict
 
-    # 1. Load dataset and pre-trained model
-    # NOTE: according to docs, it is very important to have column names ["child", "parent", "negative"] *in order* to match ["anchor", "positive", "negative"]
     # triplet_dataset = load_hf_dataset(config.dataset_path, config.dataset_name + "-Triplets")
     # pair_dataset = load_hf_dataset(config.dataset_path, config.dataset_name + "-Pairs")
-    triplet_dataset = load_zenodo_dataset("./data/hit_dataset/mixed", lexicon, negative_type="random", example_type="triplet")
-    pair_dataset = load_zenodo_dataset("./data/hit_dataset/mixed", lexicon, negative_type="random", example_type="pair")
+
+    # 1. Load dataset and pre-trained model
+    # NOTE: according to docs, it is very important to have column names ["child", "parent", "negative"] *in order* to match ["anchor", "positive", "negative"]
+    triplet_dataset = load_zenodo_dataset(f"{config.dataset_path}/{config.dataset_name}", lexicon, negative_type=config.negative_type, example_type="triplet")
+    pair_dataset = load_zenodo_dataset(f"{config.dataset_path}/{config.dataset_name}", lexicon, negative_type=config.negative_type, example_type="pair")
     model = HierarchyTransformer.from_pretrained(model_name_or_path=config.model_path)
 
     # 2. set up the loss function
