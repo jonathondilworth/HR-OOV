@@ -74,6 +74,18 @@ See the [Makefile](./Makefile) and [scripts folder](./scripts) for the specific 
 - vCPUs: 24
 - Memory: 240 GB
 
+## Models
+
+The models used within this work include OnT-96, OnT-Mini-128 and HiT-mixed-SNOMED-25, all of which are available to download at [OntoZoo](https://ontozoo.io/).
+
+As this work is on-going, OntoZoo and Google Drive provide hosting platforms prior to publishing finalised models to HuggingFace.
+
+### Direct Model Links
+
+* OnT-96: [https://ontozoo.io/models/OnT-96-ckpt.zip](https://ontozoo.io/models/OnT-96-ckpt.zip)
+* OnT-Mini-128: [https://drive.google.com/file/d/1cQOqFVOHqBKkSirepzF7ga6mRYPP-LnT/view](https://drive.google.com/file/d/1cQOqFVOHqBKkSirepzF7ga6mRYPP-LnT/view)
+* HiT-mixed-SNOMED-25: [https://drive.google.com/file/d/1cQOqFVOHqBKkSirepzF7ga6mRYPP-LnT/view](https://drive.google.com/file/d/1cQOqFVOHqBKkSirepzF7ga6mRYPP-LnT/view)
+
 ## License
 
 All source code is licensed under the MIT License (see [LICENSE](./LICENSE)).
