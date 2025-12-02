@@ -1,6 +1,6 @@
 # dataset from local path
-dataset_path: "./data/ont_dataset/OnT" 
-dataset_name: "ont-full-32"
+dataset_path: "./data/ont_dataset/OnT"
+dataset_name: "OnT-96"
 
 # pre-trained models from Hugging Face
 # model_path: "sentence-transformers/all-MiniLM-L6-v2"
@@ -11,7 +11,7 @@ model_path: "sentence-transformers/all-MiniLM-L12-v2"
 
 # training config
 num_train_epochs: 1
-train_batch_size: 32
+train_batch_size: 96
 eval_batch_size: 16
 learning_rate: 1e-5
 role_emd_mode: "sentenceEmbedding" 

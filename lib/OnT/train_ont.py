@@ -20,6 +20,8 @@ import shutil
 import sys
 from datetime import datetime
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+
 import click
 from deeponto.utils import create_path, load_file, set_seed
 from sentence_transformers.training_args import SentenceTransformerTrainingArguments

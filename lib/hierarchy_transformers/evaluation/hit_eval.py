@@ -82,12 +82,12 @@ class HierarchyTransformerEvaluator(SentenceEvaluator):
         if child_embeds is None:
             logger.info("Encode child entities.")
             child_embeds = model.encode(
-                sentences=self.child_entities, batch_size=self.batch_size, convert_to_tensor=True
+                sentences=list(self.child_entities), batch_size=int(self.batch_size), convert_to_tensor=True
             )
         if parent_embeds is None:
             logger.info("Encode parent entities.")
             parent_embeds = model.encode(
-                sentences=self.parent_entities, batch_size=self.batch_size, convert_to_tensor=True
+                sentences=list(self.parent_entities), batch_size=int(self.batch_size), convert_to_tensor=True
             )
         dists = model.manifold.dist(child_embeds, parent_embeds)
         child_norms = model.manifold.dist0(child_embeds)
@@ -121,12 +121,12 @@ class HierarchyTransformerEvaluator(SentenceEvaluator):
         assert (
             type(best_centri_weight) is type(best_threshold)
         ), "Inconsistent types of hyperparameters 'best_centri_weight' (centripetal score weight) and 'best_threshold' (overall threshold)"
-
+   
         logger.info("Encode child entities.")
-        child_embeds = model.encode(sentences=self.child_entities, batch_size=self.batch_size, convert_to_tensor=True)
+        child_embeds = model.encode(sentences=list(self.child_entities), batch_size=int(self.batch_size), convert_to_tensor=True)
         logger.info("Encode parent entities.")
         parent_embeds = model.encode(
-            sentences=self.parent_entities, batch_size=self.batch_size, convert_to_tensor=True
+            sentences=list(self.parent_entities), batch_size=int(self.batch_size), convert_to_tensor=True
         )
 
         if best_centri_weight and best_threshold:

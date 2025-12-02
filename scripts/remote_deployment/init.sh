@@ -68,4 +68,10 @@ if ! grep -q '^NHS_API_KEY=' .env 2>/dev/null; then
   echo "ALT_SNOMED_ONTOLOGY_URL=https://zenodo.org/records/14036213/files/ontologies.zip?download=1" >> .env
 fi
 
+# setting MEM_ALLOC for any processes that utilise RAM, e.g., DeepOnto (which calls java)
+# set the number of instances to sample (default=50)
+if ! grep -q '^MEM_ALLOC=' .env 2>/dev/null; then
+  echo "MEM_ALLOC=16g" >> .env
+fi
+
 echo "[INFO] Initialisation finished."

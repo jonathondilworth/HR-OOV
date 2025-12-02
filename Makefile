@@ -3,7 +3,7 @@ SHELL := /usr/bin/env bash
 
 IMAGE ?= hroov:gpu
 
-.PHONY: init env download-snomed process-snomed models embeddings single-target multi-target tests all
+.PHONY: init env download-snomed process-snomed download-mirage process-mirage sample hit-data hit-data-custom ont-data hit-train ont-train models embeddings single-target multi-target tests all
 
 init:
 	@echo "[INIT] Initialising project enviornment variables and .env"
@@ -32,6 +32,30 @@ process-mirage:
 sample:
 	@echo "[SAMPLE] Sampling processed datasets (SNOMED CT and MIRAGE)..."
 	./scripts/remote_deployment/process_diff_and_sample.sh
+
+hit-data:
+	@echo "[HIT] Building HiT dataset (running pipeline)..."
+	./scripts/remote_deployment/build_hit_data.sh
+
+hit-data-custom:
+	@echo "[HIT] Building HiT dataset using custom ontology (running pipeline)..."
+	./scripts/remote_deployment/build_hit_data_custom.sh
+
+ont-data:
+	@echo "[ONT] Building OnT dataset (running pipeline)..."
+	./scripts/remote_deployment/build_ont_data.sh
+
+hit-train:
+	@echo "[HIT] Starting HiT training..."
+	./scripts/remote_deployment/train_hit.sh
+
+hit-train-custom:
+	@echo "[HIT] Starting HiT training with custom dataset..."
+	./scripts/remote_deployment/train_hit_custom.sh
+
+ont-train:
+	@echo "[ONT] Starting OnT training..."
+	./scripts/remote_deployment/train_ont.sh
 
 models:
 	@echo "[MODELS] Fetching both SNOMED-tuned and pretrained encoders ..."
