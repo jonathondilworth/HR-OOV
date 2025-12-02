@@ -25,7 +25,7 @@ echo ""
 
 echo "[Step 1/2] Building HiT dataset (mixed) for training HiT models as used within the paper ... "
 
-echo "" | conda run -n "$AUTO_ENV_NAME" --no-capture-output python ./scripts/load_taxonomy.py \
+echo "$MEM_ALLOC" | conda run -n "$AUTO_ENV_NAME" --no-capture-output python ./scripts/load_taxonomy.py \
   --ontology ./data/snomedct-international.owl \
   --training-data ./data/hit_dataset
 

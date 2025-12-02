@@ -214,7 +214,7 @@ class OntologyTransformer(nn.Module):
             print(f"Warning: wrapper_config.json not found in {input_path}, using default values.")
         
         # Create wrapper instance with loaded configuration
-        wrapper = HierarchyTransformerWrapper(base_model, role_emd_mode, role_model_mode)
+        wrapper = OntologyTransformer(base_model, role_emd_mode, role_model_mode)
         
         # Load role_model weights if they exist
         role_model_path = os.path.join(input_path, 'role_model.pt')

@@ -27,7 +27,7 @@ echo ""
 
 echo "[Step 1/1] Building OnT dataset for training OnT models as used within the paper ... "
 
-echo "128g" | conda run -n "$AUTO_ENV_NAME" --no-capture-output python ./lib/OnT/normalization/ELNormalizedData.py \
+echo "$MEM_ALLOC" | conda run -n "$AUTO_ENV_NAME" --no-capture-output python ./lib/OnT/normalization/modELNormalize.py \
  --input ./data/snomedct-international.owl \
  --output ./data/ont_dataset
 
@@ -38,5 +38,13 @@ touch ./data/ont_dataset/OnT/role_inverse.json
 echo "{}" >> ./data/ont_dataset/OnT/role_inverse.json
 
 echo "Built OnT dataset."
+
+echo "[Step 3/3] Preprocessing OnT data for SNOMED CT ..."
+
+conda run -n "$AUTO_ENV_NAME" --no-capture-output python ./scripts/preprocess_ont_dir.py \
+ --base-dir ./data/ont_dataset \
+ --strip-parentheses \
+ --to-lower-case \
+ --collapse-whitespace
 
 echo "...DONE!"

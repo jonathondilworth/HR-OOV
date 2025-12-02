@@ -68,19 +68,19 @@ class OnTEvaluator(SentenceEvaluator):
     def calculate_metrics(self, all_candidates, model, centri_weight, kind = 'nf1'):
         query_candidates = self.query_entities[kind]
         query_setences = Dataset.from_list(query_candidates)['name']
-        query_embeds = model.encode(sentences=query_setences, batch_size=self.batch_size, convert_to_tensor=True).unsqueeze(1)
+        query_embeds = model.encode(sentences=list(query_setences), batch_size=int(self.batch_size), convert_to_tensor=True).unsqueeze(1)
 
         device = query_embeds.device
         if kind == 'nf2':
             con1_setences = Dataset.from_list(query_candidates)['con1']
             con2_setences = Dataset.from_list(query_candidates)['con2']
-            con1_embeds=model.tokenizer(con1_setences, return_tensors="pt", padding=True, truncation=True).to(device)
-            con2_embeds=model.tokenizer(con2_setences, return_tensors="pt", padding=True, truncation=True).to(device)  
+            con1_embeds=model.tokenizer(list(con1_setences), return_tensors="pt", padding=True, truncation=True).to(device)
+            con2_embeds=model.tokenizer(list(con2_setences), return_tensors="pt", padding=True, truncation=True).to(device)  
         elif kind == 'nf3' or kind == 'nf4':
             role_sentences = Dataset.from_list(query_candidates)['role']
             con_sentences = Dataset.from_list(query_candidates)['con']
-            role_embeds=model.tokenizer(role_sentences, return_tensors="pt", padding=True, truncation=True).to(device)
-            con_embeds=model.tokenizer(con_sentences, return_tensors="pt", padding=True, truncation=True).to(device)
+            role_embeds=model.tokenizer(list(role_sentences), return_tensors="pt", padding=True, truncation=True).to(device)
+            con_embeds=model.tokenizer(list(con_sentences), return_tensors="pt", padding=True, truncation=True).to(device)
         
         answers_id = torch.tensor(self.answer_ids[kind]).to(query_embeds.device)
         
@@ -136,7 +136,7 @@ class OnTEvaluator(SentenceEvaluator):
     def __call__(self, model: HierarchyTransformer, output_path: str | None = None, inference_mode: str = 'sentence', epoch: int = -1, steps: int = -1, best_centri_weight: float | None = None):
         # Call the model and get predictions
         self.inference_mode = inference_mode
-        all_candidates = model.encode(sentences=self.all_entities, convert_to_tensor=True).unsqueeze(0)
+        all_candidates = model.encode(sentences=list(self.all_entities), convert_to_tensor=True).unsqueeze(0)
         if  isinstance(best_centri_weight, float):
             # log the results
             if os.path.exists(os.path.join(output_path, "results.tsv")):
