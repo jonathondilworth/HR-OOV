@@ -45,6 +45,14 @@ ont-data:
 	@echo "[ONT] Building OnT dataset (running pipeline)..."
 	./scripts/remote_deployment/build_ont_data.sh
 
+ont-data-custom:
+	@echo "[ONT] Building OnT dataset for CUSTOM data (running pipeline)..."
+	./scripts/remote_deployment/build_ont_data_custom.sh
+
+ont-data-custom-hard:
+	@echo "[ONT] Building OnT dataset for CUSTOM data USING HARD NEGATIVES FOR NF1 (running pipeline)..."
+	./scripts/remote_deployment/build_ont_data_custom_hard.sh
+
 hit-train:
 	@echo "[HIT] Starting HiT training..."
 	./scripts/remote_deployment/train_hit.sh
@@ -56,6 +64,14 @@ hit-train-custom:
 ont-train:
 	@echo "[ONT] Starting OnT training..."
 	./scripts/remote_deployment/train_ont.sh
+
+ont-train-custom:
+	@echo "[ONT] Starting OnT training of custom model..."
+	./scripts/remote_deployment/train_ont_custom.sh
+
+ont-eval-tmp:
+	@echo "[ONT] EVAL TMP..."
+	./scripts/remote_deployment/eval_ont_tmp.sh
 
 models:
 	@echo "[MODELS] Fetching both SNOMED-tuned and pretrained encoders ..."
